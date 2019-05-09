@@ -19,7 +19,7 @@ namespace aspnetcoredemo
                     options.Listen(IPAddress.Any, 8080);
                     options.Listen(IPAddress.Any, 8443, listenOptions =>
                     {
-                        listenOptions.UseHttps(new X509Certificate2("restperf.pfx", "123456"));
+                        listenOptions.UseHttps(new X509Certificate2("restperf-win.pfx", "123456"));
                     });
                 })
                 .UseStartup<Startup>();
